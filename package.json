@@ -8,7 +8,9 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "lint:prettier": "prettier --check --ignore-path .gitignore \"!package-lock.json\" --plugin-search-dir=. ./**/*.{json,css,js,ts,cjs,svelte}",
-    "fix:prettier": "prettier --write --ignore-path .gitignore \"!package-lock.json\" --plugin-search-dir=. ./**/*.{json,css,js,ts,cjs,svelte}"
+    "fix:prettier": "prettier --write --ignore-path .gitignore \"!package-lock.json\" --plugin-search-dir=. ./**/*.{json,css,js,ts,cjs,svelte}",
+    "lint:eslint": "eslint --ignore-path .gitignore . --ext .js,.ts,.svelte",
+    "fix:eslint": "eslint --fix --ignore-path .gitignore . --ext .js,.ts,.svelte"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
